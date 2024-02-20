@@ -1,3 +1,7 @@
 from django.shortcuts import render
-#My comment
+from django.http import HttpResponse
+
+
+def products(request):
+    return render(request, 'products/products.html')
 # Create your views here.
