@@ -1,0 +1,273 @@
+{% extends 'products/base.html' %}
+{% load static %} <!-- не наследуется от шаблона -->
+
+{% block css %}
+    <link href="{% static 'vendor/css/index.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+
+<section>
+    <!--    <div class="alert alert-light text-center" role="alert">-->
+    <!--        Информационное сообщение-->
+    <!--    </div>-->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-6">
+                <h1 class="mt-5">Store</h1>
+                <p>
+                    Новые образы и лучшие бренды на Store.
+                    Бесплатная доставка по всему миру! Аутлет: до -70% Собственный бренд. -20% новым покупателям.
+                </p>
+
+    <table border="1" bordercolor="black">
+        <thead>
+        <tr>
+            <th rowspan="3">Степень твёрдости (новое обозначение FEPA)</th>
+            <th rowspan="3">Степень твёрдости (старое обозначение)</th>
+            <th colspan="4">Значения ЗИ абразивных инструментов из</th>
+        </tr>
+        <tr>
+            <th rowspan="2">Белого и нормального электрокорундов зернистостями свыше 8</th>
+            <th rowspan="2">Зелёного карбида кремния зернистостями свыше 8</th>
+            <th colspan="2">Белого и нормального электрокорундов и зелёного карбида кремния зернистостями </th>
+        </tr>
+        <tr>
+            <th>6-M40</th>
+            <th>Менее М-43</th>
+        </tr>
+    </thead>
+        <tbody>
+            <tr>
+                <th>H</th>
+                <td>M1</td>
+                <td>35;37</td>
+                <td>-</td>
+                <td>33;35</td>
+                <td>33;35</td>
+            </tr>
+            <tr>
+                <th>I</th>
+                <td>M2</td>
+                <td>39;41</td>
+                <td>47;49</td>
+                <td>37;39</td>
+                <td>35;37</td>
+            </tr>
+            <tr>
+                <th>J</th>
+                <td>M3</td>
+                <td>41;43</td>
+                <td>51;53</td>
+                <td>41;43</td>
+                <td>39;41</td>
+            </tr>
+            <tr>
+                <th>K</th>
+                <td>CM1</td>
+                <td>45;47</td>
+                <td>55</td>
+                <td>43;45</td>
+                <td>41;43</td>
+            </tr>
+            <tr>
+                <th>L</th>
+                <td>CM2</td>
+                <td>49</td>
+                <td>57</td>
+                <td>45;47</td>
+                <td>43;45</td>
+            </tr>
+            <tr>
+                <th>M</th>
+                <td>C1</td>
+                <td>51</td>
+                <td>59</td>
+                <td>49</td>
+                <td>45;47</td>
+            </tr>
+            <tr>
+                <th>N</th>
+                <td>C2</td>
+                <td>53</td>
+                <td>59</td>
+                <td>49;51</td>
+                <td>47;49</td>
+            </tr>
+            <tr>
+                <th>O</th>
+                <td>CT1</td>
+                <td>55</td>
+                <td>61</td>
+                <td>51;53</td>
+                <td>49</td>
+            </tr>
+            <tr>
+                <th>P</th>
+                <td>CT2</td>
+                <td>57</td>
+                <td>61</td>
+                <td>53</td>
+                <td>51</td>
+            </tr>
+            <tr>
+                <th>Q</th>
+                <td>CT3</td>
+                <td>59</td>
+                <td>63</td>
+                <td>53</td>
+                <td>53</td>
+            </tr>
+            <tr>
+                <th>R</th>
+                <td>T1</td>
+                <td>61</td>
+                <td>63</td>
+                <td>55;57</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <th>S</th>
+                <td>T2</td>
+                <td>61</td>
+                <td>-</td>
+                <td>57</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <th>T</th>
+                <td>BT</td>
+                <td>63</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+        </tbody>
+    </table>
+                <p>Таблица перевода абразивной зернистости</p>
+<table border="1" bordercolor="black">
+    <thead>
+        <tr>
+            <th colspan="" rowspan="">ряд F</th>
+            <th colspan="" rowspan="">ряд H</th>
+            <th colspan="" rowspan="">ряд P</th>
+            <th colspan="" rowspan="">Алмаз/эльбор</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>F30</td>
+            <td>50H</td>
+            <td>P30</td>
+            <td>630/500</td>
+        </tr>
+        <tr>
+            <td>F40</td>
+            <td>40H</td>
+            <td>P50</td>
+            <td>500/400</td>
+        </tr>
+        <tr>
+            <td>F60</td>
+            <td>25H</td>
+            <td>P60</td>
+            <td>315/250</td>
+        </tr>
+        <tr>
+            <td>F70</td>
+            <td>20H</td>
+            <td>P70</td>
+            <td>250/200</td>
+        </tr>
+        <tr>
+            <td>F80</td>
+            <td>16H</td>
+            <td>P80</td>
+            <td>200/160</td>
+        </tr>
+        <tr>
+            <td>F100</td>
+            <td>12H</td>
+            <td>P100</td>
+            <td>160/125</td>
+        </tr>
+        <tr>
+            <td>F120</td>
+            <td>10H</td>
+            <td>P120</td>
+            <td>125/100</td>
+        </tr>
+        <tr>
+            <td>F150</td>
+            <td>8H</td>
+            <td>P150-P180</td>
+            <td>100/80</td>
+        </tr>
+        <tr>
+            <td>F180</td>
+            <td>6H</td>
+            <td>P220</td>
+            <td>80/63</td>
+        </tr>
+        <tr>
+            <td>F220</td>
+            <td>5H, M63</td>
+            <td>P240-P280</td>
+            <td>63/50</td>
+        </tr>
+        <tr>
+            <td>F240</td>
+            <td>4H, M50</td>
+            <td>P320-P360</td>
+            <td>50/40</td>
+        </tr>
+        <tr>
+            <td>F320</td>
+            <td>M40</td>
+            <td>P400-P500</td>
+            <td>40/28</td>
+        </tr>
+        <tr>
+            <td>F360</td>
+            <td>M28</td>
+            <td>P600-P800</td>
+            <td>28/20</td>
+        </tr>
+        <tr>
+            <td>F400</td>
+            <td>M20</td>
+            <td>P1000-P1200</td>
+            <td>20/14</td>
+        </tr>
+        <tr>
+            <td>F500</td>
+            <td>M14</td>
+            <td>P1500-P2000</td>
+            <td>14/10</td>
+        </tr>
+        <tr>
+            <td>F600</td>
+            <td>M7</td>
+            <td>P2500</td>
+            <td>10/7</td>
+        </tr>
+        <tr>
+            <td>F800</td>
+            <td>M5</td>
+            <td>P3000</td>
+            <td>7/5</td>
+        </tr>
+    </tbody>
+</table>
+
+                <button id="start-purchase-btn" type="button" class="btn btn-lg">
+                    <a id="start-purchase-link" href="{% url 'products' %}">
+                        Начать покупки
+                    </a>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
