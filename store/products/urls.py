@@ -1,16 +1,12 @@
-
+from django.contrib import admin
 from django.urls import path
-from . import views
-from django.conf.urls.static import static
-from django.conf import settings
 
-
+from products.views import products, index
+#app_name='products'
 urlpatterns = [
-    # path('catalog', views.products),
-    # path('', views.index),
-    path('user', views.user),
-    path('basket', views.basket)
+    path('admin/', admin.site.urls),
+    path('', index, name='index'),
+    path('products/', products, name='products'),
+    #path('', include('products.urls')),
+    #path('', products, name='index')
 ]
-
-if settings.DEBUG:
-    urlpatterns == static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

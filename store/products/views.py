@@ -1,6 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
-from .models import ProductCategory, Product
+from .models import ProductCategory, Product, User, Basket
 
 
 def index(request):
@@ -16,17 +15,9 @@ def products(request):
         'products': Product.objects.all(),
         'categories': ProductCategory.objects.all(),
     }
-    return render(request, 'products/products.html', context)#Переименовать в index.html
-# Create your views here.
+    return render(request, 'products/products.html', context)
 
-# def products(request):
-#     context = {
-#         'title': 'Store - Каталог'}
-#         'products': Products.object.all(),
-#         'categories': ProductCategory.object.all(),
-#     }
-#     return render(request, 'products/products.html', context)
-#
+# Create your views here.
 
 
 def user(request):
