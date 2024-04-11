@@ -10,6 +10,8 @@ class ProductCategory(models.Model):
     def __str__(self):
         return self.name
 
+    objects = models.Manager()
+
 
 class Product(models.Model):
     name = models.CharField(max_length=255)
@@ -23,6 +25,8 @@ class Product(models.Model):
 
     def __str__(self):
         return f'Продукт: {self.name} | Категория: {self.category.name}'
+
+    objects = models.Manager()
 
 
 class User(models.Model):
